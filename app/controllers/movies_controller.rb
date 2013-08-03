@@ -50,14 +50,10 @@ class MoviesController < ApplicationController
     redirect_to movies_path({:order => params[:order], :ratings => params[:ratings], :check => params[:check]}) if redirect
 
     where = []
-    if @ratingHash.nil?
-       where  = @all_ratings
-    else
-      @ratingHash = params[:ratings]
-      @ratingHash.each do |key, value|
-        where << key
-      end #if !@ratingHash.nil?
-    end
+    @ratingHash = params[:ratings]
+    @ratingHash.each do |key, value|
+      where << key
+    end if !@ratingHash.nil?
 
     @sort = params[:order]
 

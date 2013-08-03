@@ -1369,3 +1369,22 @@ Served asset /application.js - 200 OK (0ms)
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-02 21:47:51 -0600
 Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-02 22:18:51 -0600
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+Rendered movies/index.html.haml within layouts/application (73.8ms)
+Completed 200 OK in 104ms (Views: 80.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-02 22:18:51 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-02 22:18:51 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-02 22:20:50 -0600
+  Processing by MoviesController#index as HTML

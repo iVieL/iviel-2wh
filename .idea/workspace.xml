@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="98c92402-c20d-46bf-b40e-d9cba451ed89" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/movies/index.html.haml" afterPath="$PROJECT_DIR$/app/views/movies/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/movies_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/movies_controller.rb" />
     </list>
     <ignored path="hw2_rottenpotatoes.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="98c92402-c20d-46bf-b40e-d9cba451ed89" time="1375502680822" ignored="false" />
     <file path="/index.html.haml" changelist="98c92402-c20d-46bf-b40e-d9cba451ed89" time="1375502705345" ignored="false" />
+    <file path="/movies_controller.rb" changelist="98c92402-c20d-46bf-b40e-d9cba451ed89" time="1375503425314" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,19 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/movies/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="41" selection-start="300" selection-end="300" vertical-scroll-proportion="0.17821783">
+            <state line="9" column="56" selection-start="315" selection-end="315" vertical-scroll-proportion="-5.478261">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movies_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="movies_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/movies_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="10" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+            <state line="58" column="11" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.67808217">
               <folding />
             </state>
           </provider>
@@ -82,9 +84,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/controllers/movies_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/movies/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/movies_controller.rb" />
       </list>
     </option>
   </component>
@@ -578,16 +580,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/movies_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/movies/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+        <state line="9" column="56" selection-start="315" selection-end="315" vertical-scroll-proportion="-5.478261">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/movies/index.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/controllers/movies_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="41" selection-start="300" selection-end="300" vertical-scroll-proportion="0.17821783">
+        <state line="58" column="11" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.67808217">
           <folding />
         </state>
       </provider>

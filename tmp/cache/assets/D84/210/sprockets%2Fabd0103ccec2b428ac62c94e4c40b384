@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1375419975.435337:@value{	I"length:ETiÑI"digest;
+TI"%cf3220bfd4f861bc8042777365273400;
+FI"source;
+TI"Ñ// This is a manifest file that'll be compiled into including all the files listed below.
+// Add new JavaScript/Coffee code in separate files in this directory and they'll automatically
+// be included in the compiled file accessible from http://example.com/assets/application.js
+// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
+// the compiled file.
+//
+//= require jquery
+//= require jquery_ujs
+//= require_tree .
+;
+;
+TI"_version;
+TI"%2ed528d18b0e53acc45fafa6be8ca5fa;
+F

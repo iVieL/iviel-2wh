@@ -1,19 +1,38 @@
 -#  This file is app/views/movies/index.html.haml
-%h1 All Movies
+%h1 :: All Movies ::
 
-%table#movies
+= form_tag movies_path, :method => :get, :id => 'rating_form' do
+ = hidden_field_tag :order, @sort
+ = hidden_field_tag :check, 'ok'
+ Include:
+ - @all_ratings.each do |rating|
+  = rating
+  = check_box_tag "ratings[#{rating}]", rating, (!@ratingHash.nil? and !@ratingHash[rating].nil? )
+ = submit_tag 'Refresh', :id => "ratings_submit"
+
+ %table#movies
   %thead
-    %tr
-      %th Movie Title
-      %th Rating
-      %th Release Date
-      %th More Info
+   %tr
+    %th{:class => ('hilite' if @sort == 'title')}
+     = link_to "Movie Title", movies_path(:order => :title, :ratings => @ratingHash), :id => 'title_header'
+    %th Rating
+    %th{:class => ('hilite' if @sort == 'release_date')}
+     = link_to "Release Date", movies_path(:order => :release_date, :ratings => @ratingHash), :id => 'release_date_header'
+    %th More Info
   %tbody
-    - @movies.each do |movie|
-      %tr
-        %td= movie.title 
-        %td= movie.rating
-        %td= movie.release_date
-        %td= link_to "More about #{movie.title}", movie_path(movie)
+   - @movies.each do |movie|
+    %tr
+     %td= movie.title
+     %td= movie.rating
+     %td= movie.release_date
+     %td= link_to "More about #{movie.title}", movie_path(movie)
 
 = link_to 'Add new movie', new_movie_path
+
+%h1 Search TMDb for a movie
+
+= form_tag :action => 'search_tmdb' do
+
+ %label{:for => 'search_terms'} Search Terms
+ = text_field_tag 'search_terms'
+ = submit_tag 'Search TMDb'

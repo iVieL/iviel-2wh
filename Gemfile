@@ -8,7 +8,8 @@ gem 'rails', '3.1.0'
 # for Heroku deployment - as described in Ap. A of ELLS book
 group :development, :test do
   gem 'sqlite3'
-  gem 'ruby-debug19', :require => 'ruby-debug'
+#  gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'debugger'
 end
 group :production do
   gem 'pg'
@@ -33,3 +34,6 @@ gem 'jquery-rails'
 
 # To use debugger
 gem 'haml'
+
+#gem 'linecache19', '0.5.12', :path => "~/.rvm/gems/ruby-2.0.0-p247/gems/linecache19-0.5.12/"
+#gem 'ruby-debug-base19', '0.11.25', :path => "~/.rvm/gems/ruby-2.0.0-p247/gems/ruby-debug-base19-0.11.25"

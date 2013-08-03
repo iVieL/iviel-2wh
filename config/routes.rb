@@ -14,6 +14,9 @@ Rottenpotatoes::Application.routes.draw do
   #   resources :products
   resources :movies
 
+  # "fake" controller method
+  post '/movies/search_tmdb'
+
   # Sample resource route with options:
   #   resources :products do
   #     member do
